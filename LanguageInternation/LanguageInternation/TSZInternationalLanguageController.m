@@ -52,6 +52,7 @@ static NSBundle *bundle = nil;
 /**
     获取当 语言方法
  */
+
 +(void)setUserLanguage:(NSString *)language{
 
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
