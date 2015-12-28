@@ -69,7 +69,6 @@ static NSBundle *bundle = nil;
     //写入
     [defaults synchronize];
     
-    
 }
 
 +  (NSString *)userLanguage{
@@ -77,6 +76,7 @@ static NSBundle *bundle = nil;
     NSUserDefaults *def = [NSUserDefaults standardUserDefaults];
     
     NSString *string = [def valueForKey:@"userLanguage"];
+    
     return string;
 }
 

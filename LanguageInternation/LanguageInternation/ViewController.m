@@ -27,7 +27,6 @@ static NSString *name = @"userLanguageNotification";
     NSLog(@"--------------");
     
     //注册通知，用于接收改变语言的通知
-    
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(changeLanguage) name:name object:nil];
     
     //初始化语言
@@ -37,9 +36,9 @@ static NSString *name = @"userLanguageNotification";
     
     NSBundle *bundle = [TSZInternationalLanguageController bundle];
     
-    NSString *inviteMsg = [bundle localizedStringForKey:@"invite" value:nil table:@"hello"];
+    NSString *inviteMsg = [bundle localizedStringForKey:@"Cancel" value:nil table:@"hello"];
     
-    NSString *buttonInfo = [bundle localizedStringForKey:@"buttonInfo" value:nil table:@"hello"];
+    NSString *buttonInfo = [bundle localizedStringForKey:@"History" value:nil table:@"hello"];
     
     _btnChange.backgroundColor = [UIColor redColor];
     
@@ -66,7 +65,6 @@ static NSString *name = @"userLanguageNotification";
     
     //提示刷新
     [[NSNotificationCenter defaultCenter] postNotificationName:name object:nil];
-    
 }
 
 /**
@@ -74,8 +72,8 @@ static NSString *name = @"userLanguageNotification";
  */
 - (void)changeLanguage{
     
-    [_btnChange setTitle:[[TSZInternationalLanguageController bundle]localizedStringForKey:@"buttonInfo" value:nil table:@"hello" ] forState:UIControlStateNormal];
-    _invitelLabel.text = [[TSZInternationalLanguageController bundle]localizedStringForKey:@"invite" value:nil table:@"hello"];
+    [_btnChange setTitle:[[TSZInternationalLanguageController bundle]localizedStringForKey:@"History" value:nil table:@"hello" ] forState:UIControlStateNormal];
+    _invitelLabel.text = [[TSZInternationalLanguageController bundle]localizedStringForKey:@"Cancel" value:nil table:@"hello"];
 }
 
 
