@@ -13,6 +13,8 @@
 		242235631C3115D200875C59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 242235611C3115D200875C59 /* Main.storyboard */; };
 		242235651C3115D200875C59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 242235641C3115D200875C59 /* Assets.xcassets */; };
 		242235681C3115D200875C59 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 242235661C3115D200875C59 /* LaunchScreen.storyboard */; };
+		242235711C31169200875C59 /* hello.strings in Resources */ = {isa = PBXBuildFile; fileRef = 242235731C31169200875C59 /* hello.strings */; };
+		242235771C31187100875C59 /* TSZInternationalLanguageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 242235761C31187100875C59 /* TSZInternationalLanguageController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		242235641C3115D200875C59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		242235671C3115D200875C59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		242235691C3115D200875C59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		242235721C31169200875C59 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/hello.strings; sourceTree = "<group>"; };
+		242235741C31172800875C59 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/hello.strings; sourceTree = "<group>"; };
+		242235751C31187100875C59 /* TSZInternationalLanguageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSZInternationalLanguageController.h; sourceTree = "<group>"; };
+		242235761C31187100875C59 /* TSZInternationalLanguageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSZInternationalLanguageController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,8 @@
 		242235571C3115D100875C59 /* LanguageInternation */ = {
 			isa = PBXGroup;
 			children = (
+				242235751C31187100875C59 /* TSZInternationalLanguageController.h */,
+				242235761C31187100875C59 /* TSZInternationalLanguageController.m */,
 				2422355B1C3115D200875C59 /* AppDelegate.h */,
 				2422355C1C3115D200875C59 /* AppDelegate.m */,
 				2422355E1C3115D200875C59 /* ViewController.h */,
@@ -74,6 +82,7 @@
 		242235581C3115D100875C59 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				242235731C31169200875C59 /* hello.strings */,
 				242235591C3115D100875C59 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -120,6 +129,7 @@
 			knownRegions = (
 				en,
 				Base,
+				pt,
 			);
 			mainGroup = 2422354C1C3115D100875C59;
 			productRefGroup = 242235561C3115D100875C59 /* Products */;
@@ -137,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				242235681C3115D200875C59 /* LaunchScreen.storyboard in Resources */,
+				242235711C31169200875C59 /* hello.strings in Resources */,
 				242235651C3115D200875C59 /* Assets.xcassets in Resources */,
 				242235631C3115D200875C59 /* Main.storyboard in Resources */,
 			);
@@ -149,6 +160,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				242235771C31187100875C59 /* TSZInternationalLanguageController.m in Sources */,
 				242235601C3115D200875C59 /* ViewController.m in Sources */,
 				2422355D1C3115D200875C59 /* AppDelegate.m in Sources */,
 				2422355A1C3115D100875C59 /* main.m in Sources */,
@@ -172,6 +184,16 @@
 				242235671C3115D200875C59 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		242235731C31169200875C59 /* hello.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				242235721C31169200875C59 /* en */,
+				242235741C31172800875C59 /* pt */,
+			);
+			name = hello.strings;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
